@@ -927,14 +927,15 @@ body {
 		height: 150vh;
 	}
 	.second {
-		height: 120vh;
+		margin-top: -78px;
+		height: 130vh;
 	}
 	.txt {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
 	.txtNew, .abilities {
-		top: -60%;
+		top: -55%;
 	}
 	.fon {
 		background-color:rgba(111,122,138,0.9);
@@ -1019,5 +1020,22 @@ body {
 	}
 }
 @media screen and (max-width: 378px) {
-	
+	.section {
+		height: 179vh;
+	}
+	.second {
+		height: 154vh;
+	}
+	.txt {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.txtNew, .abilities {
+		top: -60%;
+	}
+	.links {
+		
+		top: 107%;
+		
+	}
 }
