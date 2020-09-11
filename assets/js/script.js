@@ -1,14 +1,3 @@
-// document.addEventListener('DOMContentLoaded', () => {   
-  // $(window).on('scroll', () => {
-  //   elementOnWindow()
-  // });
-  // slider()
-  // effectOnHover() 
-  // scrollToPage('#1')
-  // scrollToPage('#2')
-  // scrollToPage('#3')
-  // scrollToPage('#4')
-// })
 $(window).on('load', function () {
   $(window).on('scroll', () => {
     elementOnWindow()
@@ -129,8 +118,7 @@ const elementOnWindow = () => {
 
 const scrollToPage = (link) => {
   $(link).on('click',  function(event) {
-    event.preventDefault();
-    event.preventDefault();
+    event.preventDefault()
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 1000)
@@ -154,6 +142,21 @@ const openMobileMenu = () => {
     menu.fadeToggle()
   })
 
+  const mobileLinks = () => {
+    const links = document.querySelectorAll('.mobile__links')
+    links.forEach(item => {
+      item.addEventListener('click', () => {
+        menu.fadeOut()
+        navbarBrand.fadeIn()
+        burgerSpans.eq(0).removeClass('fadeSpans')
+        burgerSpans.eq(1).removeClass('additional_1')
+        burgerSpans.eq(2).removeClass('additional_2')
+        burgerSpans.eq(3).removeClass('fadeSpans')
+      })
+    })
+  }  
+
+  mobileLinks()
 
 }
 
