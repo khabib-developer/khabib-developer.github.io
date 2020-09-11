@@ -1,0 +1,121 @@
+.burger {
+	height: 25px;
+	width: 25px;
+	position: relative;
+	float:right;
+	cursor: pointer;
+	margin-top: 11px;
+}
+.burgerElements {
+	display: block;
+	height: 2px;
+	width: 25px !important;
+	background-color: #fff;
+	transition: all .5s ease;
+	position: absolute;
+	z-index: 10009;
+}
+.burgerElements:first-child {
+	transform:translateY(8px);
+}
+.burgerElements:nth-child(2) {
+	transform:translateY(15px);
+}
+.burgerElements:nth-child(3) {
+	transform:translateY(15px);
+}
+.burgerElements:nth-child(4) {
+	transform:translateY(22px);
+}
+.fadeSpans {
+	opacity: 0;
+}
+.additional_1 {
+	transform:translateY(15px) rotate(45deg) !important;
+}
+.additional_2 {
+	transform:translateY(15px) rotate(-45deg) !important;
+}
+.activeBurger_last {
+	transform:translateY(15px) !important;
+	background-color: #00D646;
+	opacity: 0;
+}
+.activeBurger_first {
+	transform:translateY(15px) !important;
+	background-color: #00D646;
+	opacity: 0;
+}
+.mobileMenu {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: #0d0e18;
+	display: none;	
+	z-index: 99;
+	top: 0;
+}
+.menu__items li a {
+	padding: 10px 20px 10px 20px;
+	font: normal normal normal 16px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif;
+	letter-spacing: 2px;
+	text-decoration: none !important;
+	color: #fff !important;
+}
+
+
+@media screen and (max-width: 992px) {
+	h2.about__title {
+		font-size: 2em;
+	}
+	h2.about__title:after {
+		width: 67%;
+	}
+	#content {
+		font-size: 0.9em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.animated__part p {
+		font-size: 20px;
+	}
+	.animated__part h1 {
+		font-size: 45px;
+	}
+	h2.about__title {
+		display: inline;
+	}
+	h2.about__title:after {
+		width: 100%;
+	}
+	.work__title h2 {
+		font-size: 2em;
+	}
+	.work__title p {
+		font-size: 1.4em;
+	}
+	.work, .about {
+		height: auto;
+	}
+}
+@media screen and (max-width:576px) {
+	.skill {
+		width: 30%;
+	}
+	.logo span:last-child {
+		display: none;
+	}
+	a.icon {
+		height: 50px;
+		width: 50px;
+	}
+	.footer__widget h2, .footer__widget a {
+		font-size: 1.4em;
+	}
+	.animated__part h1 {
+		width: 100%;
+		text-align: center;
+		font-size: 30px;
+	}
+}

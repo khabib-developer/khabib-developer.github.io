@@ -1,325 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <link rel="icon" href="/favicon.ico"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/c75278a753.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" href="assets/css/star.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="assets/css/fontawesome.css">
-	<script src="https://use.fontawesome.com/11c58f5769.js"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" href="assets/css/all.css">
 	<title>Portfolio</title>
 </head>
 <body>
+	<div class="loader">
+		<div class='cssload-loader'>
+		  <div class='cssload-inner cssload-one'></div>
+		  <div class='cssload-inner cssload-two'></div>
+		  <div class='cssload-inner cssload-three'></div>
+		</div>
+	</div>
+	<div id='stars'></div>
+	<div id='stars2'></div>
+	<div id='stars3'></div>
 	<div class="header">
-
-		<div class="logo"><a href="">P</a></div>
-		<div class="nav">
-			<div class="nav__items"><a style="color: #00D646 !important;" href="">ГЛАВНАЯ</a></div>
-			<div class="nav__items"><a href="#ability">НАВЫКИ</a></div>
-			<div class="nav__items"><a href="#experience">ОПЫТ</a></div>
-			<div class="nav__items"><a href="portfolio.html">ПОРТФОЛИО</a></div>
-			<div class="nav__items"><a href="#contacts">КОНТАКТЫ</a></div>
+		<div class="container-xl">
+			<div class="navbar__brand pl-md-2">
+				<a href="" class="logo" id="first">
+					<span></span>
+					<span class="pl-2 pr-2 ml-2">SHAROPOV HABIB</span>
+				</a>
+			</div>
+			<div class="navbar__items d-none d-lg-block">
+				<ul class="d-flex list-unstyled align-items-center justify-content-center">
+					<li><a href="#name__page" id="1">HOME</a></li>
+					<li><a href="#about__page" id="2">ABOUT</a></li>
+					<li><a href="#work__page" id="3">WORK</a></li>
+					<li><a href="#contact" id="4">CONTACT</a></li>
+					<div class="after__element"></div>
+				</ul>
+			</div>
+			<div class="burger d-lg-none">
+				<span class="burgerElements"></span>
+				<span class="burgerElements"></span>
+				<span class="burgerElements"></span>
+				<span class="burgerElements"></span>
+			</div>
 		</div>
-		<div class="burger">
-			<span class="burgerElements"></span>
-			<span class="burgerElements"></span>
-			<span class="burgerElements"></span>
-			<span class="burgerElements"></span>
-		</div>
-		
 	</div>
+	<div class="section name__carousel d-flex align-items-center justify-content-center" id="name__page">
+		<div class="animated__part">
+			<p class="d-flex justify-content-center">HELLO! I'M</p>
+			<h1>SHAROPOV HABIB</h1>
+		</div>
+		<div class="animated__part">
+			<p class="d-flex justify-content-center">I'M FROM BUKHARA</p>
+			<h1>A WEB DEVELOPER</h1>
+		</div>
+	</div>
+	<div class="section about pt-4" id="about__page">
+		<div class="container-xl pt-4 mt-4 pl-md-4 pr-md-4">
+			<div class="row pt-4 pb-4 ml-0 mr-0">
+				<div class="col-md-3">
+					<h2 class="about__title" id="about">About me</h2>
+				</div>
+				<div class="col-md-9 pt-5 pt-md-0">
+					<span style="color:#fff" id="content">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, tempora eum laborum quibusdam minus neque aspernatur sapiente sed nobis quia, nemo minima hic vero quaerat esse inventore. Unde, ratione, cum. Doloribus ipsam adipisci maiores tempora modi quidem id reprehenderit perspiciatis laudantium suscipit neque eum molestiae odit, aliquid pariatur dolorum consequuntur dignissimos non enim distinctio numquam officia et, provident? Odit officia tenetur, rem consequuntur illo aspernatur ea amet consequatur nisi cum quam eveniet labore perspiciatis, ut fuga dolore reprehenderit pariatur voluptate aliquid porro incidunt doloribus, harum necessitatibus earum explicabo! Nemo atque, dignissimos, mollitia quos veniam aliquid inventore ratione quae. Officiis, adipisci.
+					</span>
+				</div>
+			</div>
+			<div class="skills d-flex pt-4 flex-sm-nowrap flex-wrap">
+				<div class="skill html">
+					<span class="pb-3 d-block text-center">HTML&CSS</span>
+					<div id="container"></div>
+				</div>
+				<div class="skill js">
+					<span class="pb-3 d-block text-center">JavaScript</span>
+					<div id="js"></div>
+				</div>
+				<div class="skill react">
+					<span class="pb-3 d-block text-center">React</span>
+					<div id="react"></div>
+				</div>
+				<div class="skill vue">
+					<span class="pb-3 d-block text-center">Vue</span>
+					<div id="vue"></div>
+				</div>
+				<div class="skill php">
+					<span class="pb-3 d-block text-center">PHP</span>
+					<div id="php"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section work pt-4" id="work__page">
+		<div class="container-xl pl-md-4 pr-md-4">
+			<div class="work__title pt-4">
+				<p class="d-flex justify-content-center pt-4">PORTFOLIO</p>
+				<h2 class="text-center">Checkout a few of my works</h2>
+			</div>
+			<div class="projects d-flex justify-content-around flex-column flex-md-row pl-sm-2 pr-sm-2 pl-md-0 pr-md-0">
+				<div class="project">
+					<a href="" class="d-block">
+						<div class="img">
+							<div class="opacity__ d-flex justify-content-center align-items-center">
+								<i class="fas fa-search"></i>
+							</div>	
+						</div>
+						<div class="content pt-4" id="third">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est a minus, nobis dignissimos? Beatae dolore perferendis, quo praesentium aut culpa fuga quae porro inventore minima sint fugit suscipit temporibus ullam!			
+						</div>
+					</a>
+				</div>
+				<div class="project">
+					<a href="" class="d-block">
+						<div class="img">
+							<div class="opacity__ d-flex justify-content-center align-items-center">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+						<div class="content pt-4">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Est a minus, nobis dignissimos? Beatae dolore perferendis, quo praesentium aut culpa fuga quae porro inventore minima sint fugit suscipit temporibus ullam! Recusandae eos vel culpa distinctio totam modi! Rem exercitationem voluptatem inventore hic.			
+						</div>
+					</a>
+				</div>
+				<div class="project">
+					<a href="" class="d-block">
+						<div class="img">
+							<div class="opacity__ d-flex justify-content-center align-items-center">
+								<i class="fas fa-search"></i>
+							</div>
+						</div>
+						<div class="content pt-4">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum inventore explicabo excepturi iure vero. A sint iste qui ipsum repudiandae, nesciunt non ea quas libero nobis voluptatibus. Commodi itaque delectus fuga labore voluptate, necessitatibus qui harum amet veniam! Recusandae eos vel culpa distinctio totam modi! Rem exercitationem voluptatem inventore hic.			
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section footer text-center" id="contact">
+		<div class="footer__items d-flex justify-content-center">
+			<ul class="icons d-flex list-unstyled" id="footer">
+				<li><a href="" class="icon d-flex justify-content-center align-items-center"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="" class="icon d-flex justify-content-center align-items-center"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="" class="icon d-flex justify-content-center align-items-center"><i class="fa fa-facebook"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer__widget">
+			<h2 class="pb-4">Contact me</h2>
+			<a href="">habib.sharopov2001@mail.ru</a>
+		</div>
+
+	</div>
+	
 	<div class="mobileMenu pt-5">
-		<ul class="menu__items w-100 d-flex flex-column list-unstyled mt-4">
-			<li class="d-flex justify-content-center"><a style="color: #00D646 !important;"href="index.html">ГЛАВНАЯ</a></li>
-			<li class="d-flex justify-content-center"><a href="">НАВЫКИ</a></li>
-			<li class="d-flex justify-content-center"><a href="">ОПЫТ</a></li>
-			<li class="d-flex justify-content-center"><a href="portfolio.html">ПОРТФОЛИО</a></li>
-			<li class="d-flex justify-content-center"><a href="">КОНТАКТЫ</a></li>
+		<ul class="menu__items w-100 d-flex flex-column list-unstyled mt-5">
+			<li class="d-flex justify-content-center"><a href="">HOME</a></li>
+			<li class="d-flex justify-content-center"><a href="">ABOUT</a></li>
+			<li class="d-flex justify-content-center"><a href="">WORK</a></li>
+			<li class="d-flex justify-content-center"><a href="">CONTACT</a></li>
 		</ul>
-	</div>
-	<div class="section">
-		<div class="fon"></div>
-		<div class="txt">
-			<h1>
-				<span style="color:#00D646">
-					Р</span><span>УСЛАН
-				</span>
-			</h1>
-			<h1>
-				<span>
-					КАРО</span><span style="color: #00D646">.
-				</span>
-			</h1>
-			<h5 class="mt-sm-5 mt-lg-5 mt-md-5 mt-2 txt__work">
-				<span>
-					UX/UI-ДИЗАЙНЕР
-				</span>
-			</h5>
-			<h5 class="txt__work">
-				<span>
-					И ВЕБ-РАЗРАБОТЧИК
-				</span>
-			</h5>
-		</div>
-	</div>
-	<div class="second">
-		<!-- <div id="scrollY" style="position: fixed;"></div> -->
-		<div class="fon pt-0"></div>
-		<div class="resume_content">
-			<div class="logo_resume">P</div>
-			<div class="txt_new">
-				<p>Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт. Вы можете переместить его в любое место на странице. Расскажите посетителям сайта о себе.</p>
-				
-			</div>
-			<div class="download_resume">
-				<a href="">СКАЧАТЬ РЕЗЮМЕ</a>
-			</div>
-		</div>
-		<div class="txtNew" id="ability">
-			<h3><span style="color: #BEC7D5">01</span> НАВЫКИ</h3>
-
-			<h5>УРОВЕНЬ ВЛАДЕНИЯ ПРОГРАММАМИ</h5>
-		</div>
-		<div class="abilities">
-			<div class="ability__titles pr-4">
-				<div class="title mt-2 mb-md-3 d-flex flex-row justify-content-md-end justify-content-sm-start">WORDPRESS</div>
-				<div class="title mt-2 mb-md-3 d-flex flex-row justify-content-md-end justify-content-sm-start">DRUPAL</div>
-				<div class="title mt-2 mb-md-3 d-flex flex-row justify-content-md-end justify-content-sm-start">WIX</div>
-				<div class="title mt-2 mb-md-3 d-flex flex-row justify-content-md-end justify-content-sm-start">PHOTOSHOP</div>
-				<div class="title mt-2 mb-md-3 d-flex flex-row justify-content-md-end justify-content-sm-start">ILLUSTRATOR</div>
-				<div class="title mt-2 mb-md-3 d-flex flex-row justify-content-md-end justify-content-sm-start">JAVASCRIPT</div>
-				<div class="title mt-2 mb-md-3 d-flex flex-row justify-content-md-end justify-content-sm-start">HTML & CSS</div>
-			</div>
-			<div class="ability__percents">
-				<div class="ability__tech mt-md-2 mb-md-3">
-					<div class="progress_bar mt-1 mr-3" style="width: 75%;">
-						<div class="inside__bar"></div>
-					</div>
-					<div class="percent">75%</div>
-				</div>
-				<div class="ability__tech mt-md-2 mb-md-3">
-					
-					<div class="progress_bar mt-1 mr-3" style="width:70%;">
-						<div class="inside__bar"></div>
-					</div>
-					<div class="percent">70%</div>
-				</div>
-				<div class="ability__tech mt-md-2 mb-md-3">
-					
-					<div class="progress_bar mt-1 mr-3" style="width:95%;">
-						<div class="inside__bar"></div>
-					</div>
-					<div class="percent">95%</div>
-				</div>
-				<div class="ability__tech mt-md-2 mb-md-3">
-					
-					<div class="progress_bar mt-1 mr-3" style="width: 85%;">
-						<div class="inside__bar"></div>
-					</div>
-					<div class="percent">85%</div>
-				</div>
-				<div class="ability__tech mt-md-2 mb-md-3">
-					
-					<div class="progress_bar mt-1 mr-3" style="width: 80%">
-						<div class="inside__bar"></div>
-					</div>
-					<div class="percent">80%</div>
-				</div>
-				<div class="ability__tech mt-md-2 mb-md-3">
-					
-					<div class="progress_bar mt-1 mr-3" style="width:85%;">
-						<div class="inside__bar"></div>
-					</div>
-					<div class="percent">85%</div>
-				</div>
-				<div class="ability__tech mt-md-2 mb-md-3">
-					
-					<div class="progress_bar mt-1 mr-3" style="width:80%">
-						<div class="inside__bar"></div>
-					</div>
-					<div class="percent">80%</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="third_section">
-		<div class="txtNew" id="thirdTxt" style="padding-top: 185px;">
-			<h3><span style="color: #BEC7D5">02</span> ПОРТФОЛИО</h3>
-			<h5 style="letter-spacing: .1em;">СВЕЖИЕ РАБОТЫ. <a style="color: #BEC7D5 !important;text-decoration: none !important;" href="portfolio.html">ПОКАЗАТЬ ЕЩЕ ></a></h5>
-		</div>
-		<div class="projects">
-			<div class="projects__div">
-				<a href="portfolio.html">
-				<!-- <div class="shares__project">
-				</div> -->
-					<img src="assets/img/035244_a1d752acfa6e43a9957b6d578458ebdc_mv2.webp" width="100%" height="100%" alt="">
-				</a>
-			</div>
-			<div class="projects__div">
-				<a href="portfolio.html">
-				<!-- <div class="shares__project">
-				</div> -->
-					<img src="assets/img/gif.gif" width="100%" height="100%" alt="">
-				</a>
-			</div>
-			<div class="projects__div">
-				<a href="portfolio.html">
-				<!-- <div class="shares__project">
-				</div> -->
-					<img src="assets/img/image_2.webp" width="100%" height="100%" alt="">
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="experience">
-		<div class="txtNew" id="experience" style="padding-top: 185px;">
-			<h3><span style="color: #BEC7D5">03 </span>ОПЫТ РАБОТЫ</h3>
-		</div>
-		<div class="experience_year d-flex justify-content-md-center justify-content-sm-start">
-			<div class="right_side">
-				<div class="experience_items" style="height: 240px;"></div>
-				<div class="experience_items">
-					<div class="year first d-flex justify-content-sm-start justify-content-md-end">2012-2014</div>
-					<div class="techno_title d-flex justify-content-sm-start justify-content-md-end">WISBOOM</div>
-					<div class="short_content d-flex flex-column">
-						<span class="d-flex justify-content-sm-start justify-content-md-end pb-1">Арт-директор</span>
-						<span class="experience__content">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт.</span>
-					</div>
-				</div>
-				<div class="experience_items" style="height: 217px;"></div>
-				<div class="experience_items">
-					<div class="year first d-flex justify-content-sm-start justify-content-md-end">2012-2014</div>
-					<div class="techno_title d-flex justify-content-sm-start justify-content-md-end">WISBOOM</div>
-					<div class="short_content d-flex flex-column">
-						<span class="d-flex justify-content-sm-start justify-content-md-end pb-1">Арт-директор</span>
-						<span class="experience__content">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт.</span>
-					</div>
-				</div>
-				<div class="experience_items" style="height: 217px;"></div>
-				<div class="experience_items">
-					<div class="year first d-flex justify-content-sm-start justify-content-md-end">2012-2014</div>
-					<div class="techno_title d-flex justify-content-sm-start justify-content-md-end">WISBOOM</div>
-					<div class="short_content d-flex flex-column">
-						<span class="d-flex justify-content-sm-start justify-content-md-end pb-1">Арт-директор</span>
-						<span class="experience__content">Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт.</span>
-					</div>
-				</div>
-			</div>
-			<div class="middle">
-				<div class="middle_row mt-1"></div>
-			</div>
-			<div class="left_side">
-				<div class="experience_items">
-					<div class="year second_ d-flex">2012-2014</div>
-					<div class="techno_title">WISBOOM</div>
-					<div class="short_content d-flex flex-column">
-						<span class="pb-1">Арт-директор</span>
-						<span>Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт.</span>
-					</div>
-				</div>
-				<div class="experience_items" style="height: 217px;"></div>
-				<div class="experience_items">
-					<div class="year second_ d-flex">2012-2014</div>
-					<div class="techno_title">WISBOOM</div>
-					<div class="short_content d-flex flex-column">
-						<span class="pb-1">Арт-директор</span>
-						<span>Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт.</span>
-					</div>
-				</div>
-				<div class="experience_items" style="height: 217px;"></div>
-				<div class="experience_items">
-					<div class="year second_ d-flex">2012-2014</div>
-					<div class="techno_title">WISBOOM</div>
-					<div class="short_content d-flex flex-column">
-						<span class="pb-1">Арт-директор</span>
-						<span>Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт.</span>
-					</div>
-				</div>
-				<div class="experience_items" style="height: 217px;"></div>
-			</div>
-		</div>
-	</div>
-	<div class="before_footer">
-		<div class="fon pt-0"></div>
-		<div class="contact" id="contacts">
-			<div class="contact__info d-flex flex-column justify-content-center">
-				<div class="info__first d-flex justify-content-center">
-					<div class="short_text flex-first pr-sm-4 pr-md-4 pr-lg-4">
-						<h5>СВЯЖИТЕСЬ СО МНОЙ</h5>
-						<div>
-							<p>
-								Это текст. Нажмите один раз и выберите «Редактировать текст» или просто кликните дважды, чтобы добавить свой текст и настроить шрифт.
-							</p>
-							<p>
-								info@mysite.ru
-								<br>
-								+7 (495) 000-00-00
-							</p>
-						</div>
-					</div>
-					<div class="forms pl-sm-4 pl-md-4 pl-lg-4">
-						<div class="form_items d-flex flex-md-row flex-sm-row flex-lg-row flex-column">
-							<input type="text" class="w-50" placeholder="Name*">
-							<input type="email" class="w-50 mr-0" placeholder="Email*">
-						</div>
-						<div class="form_items">
-							<input type="text" class="w-100" placeholder="Subject">
-						</div>
-						<div class="form_items">
-							<textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-						</div>
-						<div class="form_items">
-							<input type="submit" name="" id="submit">
-						</div>
-					</div>
-				</div>
-				<div class="links d-flex justify-content-center">
-					<ul class="social_links d-flex list-unstyled">
-						<li>
-							<a href="">
-								<img width="30px" height="30px" src="assets/img/linkedn.webp" alt="">
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="assets/img/twitter.webp" alt="">
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="assets/img/google_plus.webp" alt="">
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="assets/img/twitter_2.webp" alt="">
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="assets/img/instagram.webp" alt="">
-							</a>
-						</li>
-						<li>
-							<a href="">
-								<img src="assets/img/fb.webp" alt="">
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<div class="footer_item">
-			<div class="logo__footer"><a href="">P</a></div>
-			<div class="co">© 2023 Руслан Каро. Сайт создан на Wix.com</div>
-		</div>
-	</div>
-<script src="assets/js/jquery-3.4.1.min.js"></script>
-<script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/script.js" type="text/javascript"></script>	
+	</div>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/js/progressbar.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
