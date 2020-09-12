@@ -895,9 +895,7 @@ module.exports = {
 
 function actionProgress(selector, percent) {
   var bar = new ProgressBar.Circle(selector, {
-    color: '#001bae',
-    // This has to be the same size as the maximum width to
-    // prevent clipping
+    color: '#fff',
     strokeWidth: 4,
     trailWidth: 1,
     easing: 'easeInOut',
@@ -906,20 +904,12 @@ function actionProgress(selector, percent) {
       autoStyleContainer: true
     },
     from: { color: '#001bae', width: 1 },
-    to: { color: '#aaa', width: 5 },
+    to: { color: '#555', width: 2 },
     // Set default step function for all animate calls
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
       circle.path.setAttribute('stroke-width', state.width);
-      circle.setText(percent);
-
-      // var value = Math.round(circle.value() * 1);
-      // if (value === 0) {
-      //   circle.setText(percent);
-      // } else {
-      //   circle.setText(percent);
-      // }
-
+      circle.setText(percent + '%');
     }
   });
   bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
