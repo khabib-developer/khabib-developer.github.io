@@ -29,7 +29,10 @@ a.logo span:first-child {
     height: 50px;
     display: block;
     border-radius: 50%;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-image: url('../img/profile.jpg');
+    background-position: center;
+    background-size: 100%;
     margin-right: 10px;
 }
 .navbar__items {
@@ -133,6 +136,10 @@ a.logo span:first-child {
 	padding: 15px;
 	color: #fff
 }
+.progressbar-text {
+	font-size: 1.2em !important;
+}
+
 
 /***************************************work**********************************/
 .work {
@@ -179,7 +186,7 @@ a.logo span:first-child {
 	padding-top: 50px;
 	opacity:0;
 	transform: translateY(30px);
-	transition: 0.8s ease
+	transition: 0.2s ease
 }
 .project {
 	padding: 20px
@@ -190,7 +197,7 @@ a.logo span:first-child {
 }
 /***************************************footer*********************************/
 .footer {
-	height: 50vh;
+	height: 80vh;
 }
 .footer__items {
 	padding-top: 10em;

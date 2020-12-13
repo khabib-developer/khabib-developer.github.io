@@ -73,7 +73,7 @@ const progressSkills = () => {
   actionProgress(container, 90)
   actionProgress(js, 90)
   actionProgress(react, 80)
-  actionProgress(vue, 30)
+  actionProgress(wordpress, 75)
   actionProgress(php, 70)
   $('.skills').css({
     opacity: '1',
@@ -91,7 +91,6 @@ const elementOnWindow = () => {
   const secondElement = $('#about__page').offset().top
   const thirdElement = $('#work__page').offset().top
   const fourElement = $('#contact').offset().top
-
   if(top < secondElement) {
     effectOnHover(7, 15)  
     move(7, 15)
@@ -101,7 +100,7 @@ const elementOnWindow = () => {
     move(29, 17)
     progressSkills()
   }
-  if(top > thirdElement && top < fourElement) {
+  if(top > thirdElement - 200 && top < fourElement - 200) {
     effectOnHover(54, 15)  
     move(54, 15)
     $('.projects').css({
@@ -109,7 +108,7 @@ const elementOnWindow = () => {
       transform: 'translateY(0px)'
     });
   }
-  if(top - 200 === fourElement) {
+  if(top - 90 === fourElement) {
     effectOnHover(76, 23.5)  
     move(76, 23.5)
     $('.icons').css('transform', 'translateY(0px)');
